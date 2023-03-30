@@ -1,0 +1,48 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "author": "John Doe",
+      "title": "10 Tips for Writing Better Code",
+      "images": {
+        "blog_cover": "https://example.com/blog1/cover.jpg",
+        "author_image": "https://example.com/blog1/author.jpg"
+      },
+      "read_time": "5 minutes",
+      "publish_date": "2022-01-01"
+    },
+    {
+      "id": 2,
+      "author": "Jane Smith",
+      "title": "The Benefits of Using a Version Control System",
+      "images": {
+        "blog_cover": "https://example.com/blog2/cover.jpg",
+        "author_image": "https://example.com/blog2/author.jpg"
+      },
+      "read_time": "8 minutes",
+      "publish_date": "2022-01-02"
+    },
+    {
+      "id": 3,
+      "author": "Bob Johnson",
+      "title": "Introduction to Machine Learning",
+      "images": {
+        "blog_cover": "https://example.com/blog3/cover.jpg",
+        "author_image": "https://example.com/blog3/author.jpg"
+      },
+      "read_time": "12 minutes",
+      "publish_date": "2022-01-03"
+    },
+    {
+      "id": 4,
+      "author": "Samantha Lee",
+      "title": "How to Build a Responsive Website",
+      "images": {
+        "blog_cover": "https://example.com/blog4/cover.jpg",
+        "author_image": "https://example.com/blog4/author.jpg"
+      },
+      "read_time": "6 minutes",
+      "publish_date": "2022-01-04"
+    }
+  ]
+}
