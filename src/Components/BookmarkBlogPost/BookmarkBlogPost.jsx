@@ -19,9 +19,9 @@ const BookmarkBlogPost = ({ readTime }) => {
       <p>Spent time on read : <span>{time?time:0}</span> min</p>
     </div>
       <div className="bookmark border-0 rounded mt-5 py-4">
-        <div className="h6 ms-2 fw-semibold">Bookmarked Blogs : <span className="span">8</span></div>
+        <div className="h6 ms-2 fw-light text-color">Bookmarked Blogs : <span className="span">8</span></div>
         <div className="bookmarks fw-semibold">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, sunt?</p>
+          <p className="h6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, sunt?</p>
         </div>
       </div>
     </div>

@@ -23,7 +23,7 @@ body{
   font-weight:bold !important;
 }
 .nav-link{
-  color:#333;
+  color:#2c3e50;
   font-weight:500 !important;
 }
 .nav-link:hover{
@@ -38,6 +38,9 @@ body{
 }
 .icon:hover{
 color:#6047EC;
+}
+.text-color{
+  color:#2c3e50 !important;
 }
 .icon:active{
   color:#6047EC !important;
@@ -55,11 +58,12 @@ color:#6047EC;
   text-align: center;
   padding:5px 7px;
   font-weight:500;
-  font-size:14px;
+  font-size:14px !important;
   text-align: justify;
   border:0;
   border-radius: 5px;
   margin-bottom:1.2rem;
+  color:#2c3e50 !important;
 }
 .sticky{
   position:sticky;
@@ -72,13 +76,13 @@ color:#6047EC;
   background:#6047EC1A;
   border-radius:5px;
   margin-bottom:2rem;
+  padding-bottom:2rem;
 }
 .blog-box{
   background:#fff;
   border-radius:5px;
   padding:10px;
   margin:2rem 0;
-  margin-bottom:5rem;
 }
 .blog-box p{
   font-size:17px;
@@ -89,6 +93,10 @@ color:#6047EC;
   font-size:1.2rem;
   text-align:justify;
   margin:5px;
+  color:#2c3e50 !important;
+}
+.rows-faq-blog {
+  border:5px solid red !important;
 }
 .faq .imgs {
   max-width: 500px !important;
@@ -112,6 +120,7 @@ color:#6047EC;
   .bookmarks{
     font-size:17px;
     text-align:left;
+    font-weight:bold !important;
   }
   .bookmarks p{
     margin-top:1.2rem;
@@ -123,6 +132,8 @@ color:#6047EC;
   .spendTime p{
     font-size:1.2rem !important;
   }
-
+  .blog-box h4{
+    font-size:1rem;
+  }
 }
 
