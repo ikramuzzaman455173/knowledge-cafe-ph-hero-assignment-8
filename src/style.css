@@ -1,0 +1,36 @@
+*{
+  padding: 0;margin: 0;box-sizing: border-box;
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  /* text-align: center;   */
+}
+body{
+  overflow-x:hidden;
+}
+.card{
+  padding:2rem;
+}
+.icon{
+  cursor: pointer;
+}
+.icon:hover{
+color:#d63031;
+}
+.icon:active{
+  color:#00b894;
+}
+@media screen and (max-width:768px){
+  .user-content{
+    flex-direction:column;
+  }
+  .date-icon{
+    margin:1rem 0;
+  }
+  .h4{
+    font-size:1.5rem;
+  }
+}
+

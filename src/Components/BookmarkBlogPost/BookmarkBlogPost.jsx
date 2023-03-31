@@ -1,9 +1,8 @@
-import React from 'react';
-
 const BookmarkBlogPost = () => {
+
   return (
     <div>
-      <h3>bookmark Blog Post</h3>
+      <h1>Post Bookmark</h1>
     </div>
   );
 };
