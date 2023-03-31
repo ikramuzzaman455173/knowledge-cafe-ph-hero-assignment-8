@@ -2,8 +2,8 @@ import React from 'react';
 
 const SpendTime = () => {
   return (
-    <div>
-      <h2>Post Spend Time Components</h2>
+    <div className='border text-center pt-4 fw-semibold spendTime'>
+      <p>Spent time on read : <span>177</span> min</p>
     </div>
   );
 };

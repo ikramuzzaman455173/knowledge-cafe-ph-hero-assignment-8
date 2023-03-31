@@ -10,7 +10,7 @@ function App() {
         <div className="home-container col-md-9 mb-4">
           <Home></Home>
         </div>
-        <div className="sideCart col-md-3 card">
+        <div className="sideCart col-md-3   ">
           <BookmarkBlogPost></BookmarkBlogPost>
         </div>
       </div>
