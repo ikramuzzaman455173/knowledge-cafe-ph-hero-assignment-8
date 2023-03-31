@@ -1,48 +1,64 @@
-{
-  "data": [
+[
     {
       "id": 1,
       "author": "John Doe",
-      "title": "10 Tips for Writing Better Code",
+      "title": "10 Tips to write cleaner JavaScript code",
       "images": {
-        "blog_cover": "https://example.com/blog1/cover.jpg",
-        "author_image": "https://example.com/blog1/author.jpg"
+        "blog_cover": "https://res.cloudinary.com/daily-now/image/upload/f_auto,q_auto/v1/posts/08872b0ad95f2fd2c1f2ce6297afb8ef",
+        "author_image": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60"
       },
+    "tags": [
+      "javascript",
+      "functional-programming"
+    ],
       "read_time": "5 minutes",
-      "publish_date": "2022-01-01"
+      "publish_date": "Mar 14 (17 Days ago)"
     },
     {
       "id": 2,
       "author": "Jane Smith",
       "title": "The Benefits of Using a Version Control System",
       "images": {
-        "blog_cover": "https://example.com/blog2/cover.jpg",
-        "author_image": "https://example.com/blog2/author.jpg"
+        "blog_cover": "https://res.cloudinary.com/daily-now/image/upload/f_auto,q_auto/v1/posts/392c2ed526f0802dee79aa9a91e41319",
+        "author_image": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60"
       },
+    "tags": [
+      "general-programming",
+      "git"
+    ],
       "read_time": "8 minutes",
-      "publish_date": "2022-01-02"
+      "publish_date": "Mar 20 (11 Days ago)"
     },
     {
       "id": 3,
       "author": "Bob Johnson",
       "title": "Introduction to Machine Learning",
       "images": {
-        "blog_cover": "https://example.com/blog3/cover.jpg",
-        "author_image": "https://example.com/blog3/author.jpg"
+        "blog_cover": "https://res.cloudinary.com/daily-now/image/upload/f_auto,q_auto/v1/posts/ffd90d65f01beffa5d971b47f444d464",
+        "author_image": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60"
       },
+    "tags": [
+      "general-programming",
+      "machine learning",
+      "ai"
+    ],
       "read_time": "12 minutes",
-      "publish_date": "2022-01-03"
+      "publish_date": "Mar 22 (9 Days ago)"
     },
     {
       "id": 4,
       "author": "Samantha Lee",
       "title": "How to Build a Responsive Website",
       "images": {
-        "blog_cover": "https://example.com/blog4/cover.jpg",
-        "author_image": "https://example.com/blog4/author.jpg"
+        "blog_cover": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8UmVzcG9uc2l2ZSUyMFdlYnNpdGV8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60",
+        "author_image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60"
       },
+    "tags": [
+      "web-dev",
+      "html",
+      "css"
+    ],
       "read_time": "6 minutes",
-      "publish_date": "2022-01-04"
+      "publish_date": "Mar 25 (6 Days ago)"
     }
   ]
-}
