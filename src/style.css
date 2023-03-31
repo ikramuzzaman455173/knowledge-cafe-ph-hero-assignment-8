@@ -37,10 +37,10 @@ body{
   cursor: pointer;
 }
 .icon:hover{
-color:#d63031;
+color:#6047EC;
 }
 .icon:active{
-  color:#00b894;
+  color:#6047EC !important;
 }
 .spendTime{
   background:#6047EC1A;

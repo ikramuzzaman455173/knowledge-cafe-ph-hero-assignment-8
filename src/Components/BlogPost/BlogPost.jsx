@@ -1,7 +1,7 @@
 import React from "react";
 import { BiBookmark } from 'react-icons/bi';
 
-const BlogPost = ({ blog }) => {
+const BlogPost = ({ blog,handleBlogReadTime }) => {
   const {author_name,title,images,tags,publish_date,read_time}=blog
   return (
     <div className="card w-100 m-auto col-md-6 mb-4">
@@ -28,7 +28,7 @@ const BlogPost = ({ blog }) => {
       <div className="d-flex gap-2">
         {tags?.map((tag,index)=><p key={index}># <span className="fw-semibold">{tag}</span></p>)}
         </div>
-        <a href="#">Mark as read</a>
+        <a href="#" onClick={()=>handleBlogReadTime(read_time)}>Mark as read</a>
     </div>
 
   );

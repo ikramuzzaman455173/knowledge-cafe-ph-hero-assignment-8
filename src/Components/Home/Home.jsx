@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import BlogPost from "../BlogPost/BlogPost";
 
-const Home = () => {
+const Home = ({handleBlogReadTime}) => {
   {/* ====useState Decleares===== */ }
   const [blogPost, setBlogPost] = useState([])
   {/* ====any function decleares===== */}
@@ -12,7 +12,7 @@ const Home = () => {
     },[])
   return (
     <div>
-      {blogPost?.map(blog => <BlogPost key={blog.id} blog={blog} />)}
+      {blogPost?.map(blog => <BlogPost handleBlogReadTime={handleBlogReadTime} key={blog.id} blog={blog} />)}
     </div>
   );
 };
