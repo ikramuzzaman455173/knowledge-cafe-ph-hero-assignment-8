@@ -3,6 +3,7 @@ import "../src/style.css";
 import BookmarkBlogPost from "./Components/BookmarkBlogPost/BookmarkBlogPost";
 import Header from "./Components/Header/Header";
 import Home from "./Components/Home/Home";
+import Blog from "./Components/Blog/Blog";
 function App() {
   const [readTime, setreadTime] = useState(0);
 
@@ -21,7 +22,7 @@ function App() {
 
 
   return (
-    <div>
+    <>
         <Header></Header>
         <div className="main row">
         <div className="home-container col-md-9 mb-4">
@@ -31,7 +32,8 @@ function App() {
           <BookmarkBlogPost readTime={readTime}></BookmarkBlogPost>
         </div>
       </div>
-    </div>
+      <Blog/>
+    </>
   );
 }
 

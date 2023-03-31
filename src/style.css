@@ -68,6 +68,32 @@ color:#6047EC;
 .spendTime{
   border-radius:5px;
 }
+.blog-main-div{
+  background:#6047EC1A;
+  border-radius:5px;
+  margin-bottom:2rem;
+}
+.blog-box{
+  background:#fff;
+  border-radius:5px;
+  padding:10px;
+  margin:2rem 0;
+  margin-bottom:5rem;
+}
+.blog-box p{
+  font-size:17px;
+  font-weight:bold;
+  margin:10px 5px;
+}
+.blog-box h4{
+  font-size:1.2rem;
+  text-align:justify;
+  margin:5px;
+}
+.faq .imgs {
+  max-width: 500px !important;
+  height: auto !important;
+}
 @media screen and (max-width:1050px){
   #root{
     padding:2rem;
