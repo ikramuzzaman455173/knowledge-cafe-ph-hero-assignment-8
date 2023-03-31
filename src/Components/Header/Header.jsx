@@ -1,14 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleNavbar = () => {
-    setIsOpen(!isOpen);
-  };
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-white sticky-top my-2">
+    <nav className="navbar navbar-expand-lg navbar-light bg-white sticky-top my-4">
       <div className="container border border-1 py-2 rounded ">
         <a className="navbar-brand text-secondary logo" style={{ letterSpacing: '.5px', fontWeight: '500' }} href="#">Knowledge Cafe</a>
         <button
