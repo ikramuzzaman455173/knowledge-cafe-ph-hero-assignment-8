@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 
-const BookmarkBlogPost = ({ readTime }) => {
-  {/* ====useState decleares===== */ }
+const BookmarkBlogPost = ({ readTime,bookmarkedBlogs,bookmarkedCount }) => {
   const [time, setTime] = useState(readTime)
+  // console.log(bookmark);
 
 
-  {/* ====arrow fnction decleares===== */ }
 
-  {/* ====useEffect decleares===== */ }
+
+
   useEffect(() => {
     const getReadTimeFromStorage = localStorage.getItem("readTime")
     setTime(getReadTimeFromStorage)
@@ -19,10 +19,12 @@ const BookmarkBlogPost = ({ readTime }) => {
       <p>Spent time on read : <span>{time?time:0}</span> min</p>
     </div>
       <div className="bookmark border-0 rounded mt-5 py-4">
-        <div className="h6 ms-2 fw-light text-color">Bookmarked Blogs : <span className="span">8</span></div>
-        <div className="bookmarks fw-semibold">
-          <p className="h6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, sunt?</p>
-        </div>
+        <div className="h6 ms-2 fw-light text-color">Bookmarked Blogs : {bookmarkedCount} <span className="span"></span></div>
+        {bookmarkedBlogs?.map(blogs => {
+          return(<div key={blogs.id} className="bookmarks fw-semibold">
+          <p className="h6">{blogs.title}</p>
+        </div>)
+        })}
       </div>
     </div>
   );

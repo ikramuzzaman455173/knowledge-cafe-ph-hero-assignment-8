@@ -10,7 +10,7 @@ const Blog = () => {
             {/* ====faq blog question 1===== */}
             <div className='blog-box shadow-sm'>
               <p>Props vs state?</p>
-              <h4><span className="span">ans:</span> Props and state are two concepts in React that are used to manage and pass data between components. <span className='span'>Props </span>(short for properties) are read-only data that are passed from a parent component to a child component.React has another special built-in object called <sapn className="span">state</sapn>, which allows components to create and manage their own data.</h4>
+              <h4><span className="span">ans:</span> Props and state are two concepts in React that are used to manage and pass data between components. <span className='span'>Props </span>(short for properties) are read-only data that are passed from a parent component to a child component.React has another special built-in object called <span className="span">state</span>, which allows components to create and manage their own data.</h4>
             </div>
             {/* ====faq blog question 2===== */}
             <div className='blog-box shadow-sm'>

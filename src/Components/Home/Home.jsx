@@ -1,20 +1,60 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 import BlogPost from "../BlogPost/BlogPost";
-
-const Home = ({handleBlogReadTime}) => {
-  {/* ====useState Decleares===== */ }
+import BookmarkBlogPost from "../BookmarkBlogPost/BookmarkBlogPost";
+const Main = () => {
   const [blogPost, setBlogPost] = useState([])
-  {/* ====any function decleares===== */}
+  const [readTime, setreadTime] = useState(0);
+  const [bookmarkedBlogs, setBookmarkedBlogs] = useState([]);
+  const [bookmarkedCount, setBookmarkedCount] = useState(0);
 
-  {/* ====useEffect decleares===== */ }
+  const handleBlogReadTime = (time) => {
+    const previousBlogReadTime = JSON.parse(localStorage.getItem("readTime"));
+    if (previousBlogReadTime) {
+      const sum = previousBlogReadTime + time;
+      localStorage.setItem("readTime", sum);
+      setreadTime(sum);
+    } else {
+      localStorage.setItem("readTime", time);
+      setreadTime(time);
+    }
+  };
+
+  const handleBookmark = (blog) => {
+    const isAlreadyBookmarked = bookmarkedBlogs.find((b) => b.id === blog.id);
+    if (isAlreadyBookmarked) {
+      // setToastMessage("You Have Already Bookmarked This Blog");
+      alert("You Have Already Bookmarked This Blog");
+      // setShowAlert(true);
+      return;
+    }
+    const newBookmarkedBlogs = [...bookmarkedBlogs, blog];
+    setBookmarkedBlogs(newBookmarkedBlogs);
+    setBookmarkedCount(newBookmarkedBlogs.length);
+    console.log(`blog:`,blog);
+
+  };
+
+
   useEffect(() => {
-      fetch("data.json").then(response => response.json()).then(data =>setBlogPost(data)).catch(error=>console.log(`404 page not found ${error}`))
-    },[])
+    fetch("Data.json").then(response => response.json()).then(data => setBlogPost(data)).catch(error => console.log(`404 page not found ${error}`))
+  }, [])
+
+
   return (
-    <div>
-      {blogPost?.map(blog => <BlogPost handleBlogReadTime={handleBlogReadTime} key={blog.id} blog={blog} />)}
-    </div>
+    <>
+      <div className="main row">
+        <div className="col-md-9 mb-4">
+          <div>
+            {blogPost?.map(blog => <BlogPost handleBookmark={handleBookmark} handleBlogReadTime={handleBlogReadTime} key={blog.id} blog={blog} />)}
+          </div>
+        </div>
+        <div className="col-md-3">
+          <BookmarkBlogPost bookmarkedBlogs={bookmarkedBlogs} bookmarkedCount={bookmarkedCount} readTime={readTime}></BookmarkBlogPost>
+        </div>
+
+      </div>
+    </>
   );
 };
 
-export default Home;
+export default Main;
