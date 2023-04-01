@@ -4,9 +4,9 @@ import { BiBookmark } from 'react-icons/bi';
 const BlogPost = ({ blog,handleBlogReadTime,handleBookmark }) => {
   const {author_name,title,images,tags,publish_date,read_time}=blog
   return (
-    <div className="card w-100 m-auto col-md-6 mb-4">
-      <div className="w-full m-auto">
-        <img style={{width:'90%'}} className="h-25" src={images?images.blog_cover:''} alt="blog images" />
+    <div className="border-2  w-100 col-md-6 mb-5 Blog-Post">
+      <div className="w-full">
+        <img style={{width:'99%',border:'1px solid #6047EC1A',padding:'5px',borderRadius:'5px'}} className="h-25" src={images?images.blog_cover:''} alt="blog images" />
       </div>
       <div className="d-flex justify-content-between mt-5 align-items-center user-content">
         {/* ====user parts===== */}
@@ -20,13 +20,13 @@ const BlogPost = ({ blog,handleBlogReadTime,handleBookmark }) => {
         {/* ====time and icons part===== */}
 
         <div className="d-flex gap-4 align-items-center date-icon">
-          <p className="text-color">0<span>{read_time?read_time:''}</span> min read</p>
+          <p className="text-color fw-semibold time">0<span>{read_time?read_time:''}</span> min read</p>
           <button onClick={()=>handleBookmark(blog)} className="fs-5 icon"><BiBookmark/></button>
         </div>
       </div>
-      <p className="h4 mt-2 text-color">{title?title:'Title Not Found !!!'}</p>
+      <p className="h4 mt-2 text-color title">{title?title:'Title Not Found !!!'}</p>
       <div className="d-flex gap-2">
-        {tags?.map((tag,index)=><p className="text-color" key={index}># <span className="fw-semibold">{tag}</span></p>)}
+        {tags?.map((tag,index)=><p className="text-color" key={index}><span className="fw-semibold text-lowercase">#{tag}</span></p>)}
         </div>
         <a href="#" onClick={()=>handleBlogReadTime(read_time)}>Mark as read</a>
     </div>

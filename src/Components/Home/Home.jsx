@@ -25,14 +25,12 @@ const Home = () => {
     const isAlreadyBookmarked = bookmarkedBlogs.find((b) => b.id === blog.id);
     if (isAlreadyBookmarked) {
       toast("You Have Already Bookmarked This Blog !!!")
-      // alert("You Have Already Bookmarked This Blog");
       return;
     }
     const newBookmarkedBlogs = [...bookmarkedBlogs, blog];
     setBookmarkedBlogs(newBookmarkedBlogs);
     setBookmarkedCount(newBookmarkedBlogs.length);
     console.log(`blog:`,blog);
-
   };
 
   useEffect(() => {
