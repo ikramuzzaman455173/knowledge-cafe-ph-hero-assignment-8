@@ -1,3 +1,5 @@
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import "../src/style.css";
 import Blog from "./Components/Blog/Blog";
 import Header from "./Components/Header/Header";
@@ -7,7 +9,8 @@ function App() {
     <>
         <Header></Header>
       <Home ></Home>
-      <Blog/>
+      <Blog />
+      <ToastContainer />
     </>
   );
 }

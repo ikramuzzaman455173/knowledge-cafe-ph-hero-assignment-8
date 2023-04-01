@@ -19,7 +19,7 @@ const BookmarkBlogPost = ({ readTime,bookmarkedBlogs,bookmarkedCount }) => {
       <p>Spent time on read : <span>{time?time:0}</span> min</p>
     </div>
       <div className="bookmark border-0 rounded mt-5 py-4">
-        <div className="h6 ms-2 fw-light text-color">Bookmarked Blogs : {bookmarkedCount} <span className="span"></span></div>
+        <div className="h6 ms-2 fw-light text-color">Bookmarked Blogs : <span className="span">{bookmarkedCount}</span></div>
         {bookmarkedBlogs?.map(blogs => {
           return(<div key={blogs.id} className="bookmarks fw-semibold">
           <p className="h6">{blogs.title}</p>

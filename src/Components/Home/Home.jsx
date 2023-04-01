@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import BlogPost from "../BlogPost/BlogPost";
 import BookmarkBlogPost from "../BookmarkBlogPost/BookmarkBlogPost";
-const Main = () => {
+import { ToastContainer, toast } from 'react-toastify';
+
+const Home = () => {
   const [blogPost, setBlogPost] = useState([])
   const [readTime, setreadTime] = useState(0);
   const [bookmarkedBlogs, setBookmarkedBlogs] = useState([]);
@@ -22,9 +24,8 @@ const Main = () => {
   const handleBookmark = (blog) => {
     const isAlreadyBookmarked = bookmarkedBlogs.find((b) => b.id === blog.id);
     if (isAlreadyBookmarked) {
-      // setToastMessage("You Have Already Bookmarked This Blog");
-      alert("You Have Already Bookmarked This Blog");
-      // setShowAlert(true);
+      toast("You Have Already Bookmarked This Blog !!!")
+      // alert("You Have Already Bookmarked This Blog");
       return;
     }
     const newBookmarkedBlogs = [...bookmarkedBlogs, blog];
@@ -34,7 +35,6 @@ const Main = () => {
 
   };
 
-
   useEffect(() => {
     fetch("Data.json").then(response => response.json()).then(data => setBlogPost(data)).catch(error => console.log(`404 page not found ${error}`))
   }, [])
@@ -42,7 +42,7 @@ const Main = () => {
 
   return (
     <>
-      <div className="main row">
+      <div className="Home row">
         <div className="col-md-9 mb-4">
           <div>
             {blogPost?.map(blog => <BlogPost handleBookmark={handleBookmark} handleBlogReadTime={handleBlogReadTime} key={blog.id} blog={blog} />)}
@@ -57,4 +57,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Home;
