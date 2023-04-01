@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 
 const BookmarkBlogPost = ({ readTime,bookmarkedBlogs,bookmarkedCount }) => {
   const [time, setTime] = useState(readTime)
-  // console.log(bookmark);
 
 
 

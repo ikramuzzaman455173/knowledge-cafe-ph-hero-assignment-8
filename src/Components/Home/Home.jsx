@@ -30,13 +30,11 @@ const Home = () => {
     const newBookmarkedBlogs = [...bookmarkedBlogs, blog];
     setBookmarkedBlogs(newBookmarkedBlogs);
     setBookmarkedCount(newBookmarkedBlogs.length);
-    console.log(`blog:`,blog);
   };
 
   useEffect(() => {
     fetch("Data.json").then(response => response.json()).then(data => setBlogPost(data)).catch(error => console.log(`404 page not found ${error}`))
   }, [])
-
 
   return (
     <>
