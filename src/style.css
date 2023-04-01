@@ -145,5 +145,10 @@ color:#6047EC;
   .time{
     font-weight:normal !important;
   }
+  .home{
+    margin:0 !important;
+  }
+  .blog-cover-image{
+    width:100% !important;
+  }
 }
-

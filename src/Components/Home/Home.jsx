@@ -38,13 +38,13 @@ const Home = () => {
 
   return (
     <>
-      <div className="Home row">
-        <div className="col-md-9 mb-4">
+      <div className="Home row mx-auto">
+        <div className="col-md-8 mb-4">
           <div>
             {blogPost?.map(blog => <BlogPost handleBookmark={handleBookmark} handleBlogReadTime={handleBlogReadTime} key={blog.id} blog={blog} />)}
           </div>
         </div>
-        <div className="col-md-3">
+        <div className="col-md-4">
           <BookmarkBlogPost bookmarkedBlogs={bookmarkedBlogs} bookmarkedCount={bookmarkedCount} readTime={readTime}></BookmarkBlogPost>
         </div>
 

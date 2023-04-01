@@ -6,7 +6,7 @@ const BlogPost = ({ blog,handleBlogReadTime,handleBookmark }) => {
   return (
     <div className="border-2  w-100 col-md-6 mb-5 Blog-Post">
       <div className="w-full">
-        <img style={{width:'99%',border:'1px solid #6047EC1A',padding:'5px',borderRadius:'5px'}} className="h-25" src={images?images.blog_cover:''} alt="blog images" />
+        <img style={{width:'99%',border:'1px solid #6047EC1A',padding:'5px',borderRadius:'5px'}} className="h-25 blog-cover-image" src={images?images.blog_cover:''} alt="blog images" />
       </div>
       <div className="d-flex justify-content-between mt-5 align-items-center user-content">
         {/* ====user parts===== */}
