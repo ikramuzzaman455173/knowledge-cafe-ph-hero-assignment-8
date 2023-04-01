@@ -28,7 +28,8 @@ const BlogPost = ({ blog,handleBlogReadTime,handleBookmark }) => {
       <div className="d-flex gap-2">
         {tags?.map((tag,index)=><p className="text-color" key={index}><span className="fw-semibold text-lowercase">#{tag}</span></p>)}
         </div>
-        <a href="#" onClick={()=>handleBlogReadTime(read_time)}>Mark as read</a>
+      <a href="#" onClick={() => handleBlogReadTime(read_time)}>Mark as read</a>
+      <hr className="w-100"/>
     </div>
 
   );
