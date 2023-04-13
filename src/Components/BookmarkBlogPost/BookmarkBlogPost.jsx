@@ -3,10 +3,6 @@ import { useEffect, useState } from "react";
 const BookmarkBlogPost = ({ readTime,bookmarkedBlogs,bookmarkedCount }) => {
   const [time, setTime] = useState(readTime)
 
-
-
-
-
   useEffect(() => {
     const getReadTimeFromStorage = localStorage.getItem("readTime")
     setTime(getReadTimeFromStorage)
@@ -20,8 +16,8 @@ const BookmarkBlogPost = ({ readTime,bookmarkedBlogs,bookmarkedCount }) => {
       <div className="bookmark border-0 rounded mt-5 py-4">
         <div className="h6 ms-2 fw-light text-color">Bookmarked Blogs : <span className="span">{bookmarkedCount}</span></div>
         {bookmarkedBlogs?.map(blogs => {
-          return(<div key={blogs.id} className="bookmarks fw-semibold">
-          <p className="h6">{blogs.title}</p>
+          return(<div key={blogs.id} className="bookmarks fw-semibold py-2">
+            <p className="h6">{bookmarkedCount}. {blogs.title}</p>
         </div>)
         })}
       </div>
